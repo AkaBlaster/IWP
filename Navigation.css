@@ -1,0 +1,133 @@
+/* Header */
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 1;
+}
+header:before{
+    content: "";
+    position: absolute;
+    background-color: #b6a7f2;
+    width: 100%;
+    height: 68%;
+    z-index: -1;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.22);
+}
+.nav-brand img{
+    width: 20%;
+    padding-top: 1em;
+    height: 7.5em;
+}
+.toggle-menu{
+    display: block;
+    font-size: 1.2em;
+    align-self: center;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:hover ~ .toggle-menu,
+input[type="checkbox"]:checked ~ .toggle-menu
+{
+    border-bottom: solid 1px #090b08;
+}
+input[type="checkbox"]:checked ~ .navbar{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -2;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4em 0 0;
+}
+a.nav-link{
+    margin-right: 0;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+}
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link:focus{
+    border-bottom: solid 1.8px #090b08;
+}
+.menu li{
+    margin-top: 3em;
+}
+.social-menu{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.social-menu li a{
+    margin: 0 .5em;
+    padding: .5em;
+}
+.social-menu li a{
+    font-size: 1.2em;
+}
+.social-menu li a:hover,
+.social-menu li a:active,
+.social-menu li a:focus
+{
+    border-bottom: solid 1px #000;
+}
+
+@media(min-width: 768px) {
+    /*  Global  */
+    .wrapper {
+        display: flex;
+    }
+
+    /*  Header  */
+    .nav-brand img {
+        height: 10em;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        position: relative;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .menu {
+        flex-direction: row;
+        padding: 0;
+        justify-content: flex-end;
+    }
+
+    .social-menu {
+        display: none;
+    }
+
+    .menu li {
+        margin-top: 0;
+    }
+
+    a.nav-link {
+        margin-right: 3em;
+    }
+}

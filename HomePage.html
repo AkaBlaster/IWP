@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--End of Meta tags-->
+    <title>WeHost</title>
+
+<!--Css links-->
+    <link href="Css/HomePage.css" rel="stylesheet" type="text/css">
+    <link href="Css/Footer.css" rel="stylesheet">
+    <link href="Css/Navigation.css" rel="stylesheet">
+    <link href="Css/Responsive.css" rel="stylesheet">
+<!--End of css links-->
+</head>
+<body>
+
+<header id="header">
+    <!--  Brand Logo  -->
+    <a class="nav-brand" href="" target="_blank">
+        <img class="LogoImg" src="Img/logo.png">
+    </a>
+
+    <!--  Toggle Menu for Mobile  -->
+
+    <input type="checkbox" id="toggle-menu" role="button">
+    <label for="toggle-menu" class="toggle-menu">Menu</label>
+
+    <!--  Menus  -->
+    <nav id="nav-bar" class="navbar">
+        <ul class="menu">
+            <li><a class="nav-link" href="#featured">About</a></li>
+            <li><a class="nav-link" href="#our-services">Services</a></li>
+            <li><a class="nav-link" href="#ContactPage">Contact</a></li>
+            <li><a class="nav-link" href="../LoginDirectory/Login.html">Login/SignUp</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Hero Section -->
+<div id="imgHERO" class="hero">
+    <div class="hero-text">
+        <h1>Website Hosting With Purpose</h1>
+        <p class="hero-subtext">
+            We make sure your website is fast, secure & always up -<br>
+            so your visitors & search engines trust you. Guaranteed.
+        </p>
+        <a href="#" id="ChangeImg" class="btn">Explore</a>
+    </div>
+</div>
+
+<!--End of the Hero section-->
+
+<!-- About Section -->
+<section id="featured">
+    <div class="wrapper">
+        <div class="image">
+            <img src="Img/undraw_develop_app_kvt2.svg" alt="App-Development">
+        </div>
+        <div class="text">
+            <div class="heading">
+                <h1>ABOUT US</h1>
+            </div>
+            <p>The WeHost helps the customer to hire best Website hosting in best price. its's approx 72+ countries spread across the world. We have many years of experience,extensive conference facilities. We've prefered the art of reviving old,worn down properties,and injecting them with new SKYstyle.</p>
+            <a href="#" class=btn>Details</a>
+        </div>
+    </div>
+</section>
+
+<!--End of the About section-->
+
+<!--Starting Services section-->
+<section id="our-services">
+    <div class="container">
+        <div class="desc">
+            <div class="heading">
+                <h1>Our Services</h1>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis, velit a bibendum vulputate, metus enim pretium massa, eu placerat lacus leo vitae velit. Donec rutrum est sed lacus scelerisque scelerisque a ac magna. Suspendisse. </p>
+            </div>
+        </div>
+        <div class="services">
+
+            <div class="column" id="column-1">
+                <div class="service">
+                    <div class="service-desc">
+                        <i class="service-icon fas fa-flask">
+
+                        </i>
+                        <p class="service-txt">
+                            <a id="open-modal">Business Intelligence</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-desc">
+                        <p class="service-txt">
+                            <a id="open-modal1">Digital Marketing</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-desc">
+
+                        <p class="service-txt">
+                            <a id="open-modal2">Product Development</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column" id="column-2">
+                <div class="service">
+                    <div class="service-desc">
+                        <i class="service-icon fas fa-database">
+
+                        </i>
+                        <p class="service-txt">
+                            <a id="open-modal3">Web Development</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-desc">
+                        <i class="service-icon fas fa-database">
+
+                        </i>
+                        <p class="service-txt">
+                            <a id="open-modal4">WordPress Support</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-desc">
+                        <p class="service-txt">
+                           <a id="open-modal5">SEO Management</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+</section>
+
+
+<!--End of the services page section-->
+
+
+<!--Modal open and closed when clicked.-->
+
+    <div id="modal" class="modal">
+        <div class="modal-inner content">
+        <h2>Business Intellingence</h2>
+        <p class="Modal-text">Business intelligence (BI) leverages software and services to transform data into actionable insights that inform an organization’s strategic and tactical business decisions. BI tools access and analyze data sets and present analytical findings in reports, summaries, dashboards, graphs, charts and maps to provide users with detailed intelligence about the state of the business.</p>
+
+
+        <a href="#" id="close-modal" class="btn center">Learn more</a>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div id="modal1-inner" class="modal-inner content">
+            <h2>Digital Marketing</h2>
+            <p id="modal1-text"></p>
+            <a href="#" id="close-modal1" class="btn center">Learn more</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div id="modal-inner" class="modal-inner content">
+            <h2 id="Heading">Product Development</h2>
+            <p id="Modal2-text"></p>
+            <a href="#" id="close-modal2" class="btn center">Learn more</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div id="moda3-inner" class="modal-inner content">
+            <h2 id="Heading1">Web Development</h2>
+            <p id="Modal3-text"></p>
+            <a href="#" id="close-modal3" class="btn center">Learn more</a>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div id="modal4-inner" class="modal-inner content">
+            <h2 id="Heading2">Wordpress Support</h2>
+            <p id="Modal4-text"></p>
+            <a href="#" id="close-modal4" class="btn center">Learn more</a>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div id="modal5-inner" class="modal-inner content">
+            <h2 id="Heading3">SEO Management</h2>
+            <p id="Modal5-text"></p>
+            <a href="#" id="close-modal5" class="btn center">Learn more</a>
+        </div>
+    </div>
+
+<!--End of the modals-->
+
+<!--Modal Functionality with usage of DOM-->
+<script>
+
+    /*MODAL 1 Business Intelligence*/
+    const openModal = document.getElementById('open-modal');
+    const closeModal = document.getElementById('close-modal');
+
+    openModal.addEventListener('click',() => {
+        document.getElementById('modal').style.display = 'block'
+    });
+
+    closeModal.addEventListener('click',() => {
+        document.getElementById('modal').style.display ='none'
+    });
+
+    /*End of the Modal 1*/
+
+
+    /*Functionality for Modal 2*/
+    const openModal1 = document.getElementById('open-modal1');
+    const closeModal1 = document.getElementById('close-modal1');
+
+
+    openModal1.addEventListener('click',()=> {
+        document.getElementById('modal1').style.display = 'block';
+        document.getElementById('modal1-text').innerHTML = "Digital marketing encompasses all marketing efforts that use an electronic device or the internet. Businesses leverage digital channels such as search engines, social media, email, and other websites to connect with current and prospective customers."
+        document.getElementById('modal1-text').style.paddingLeft = '40px';
+        document.getElementById('modal1-text').style.paddingTop = '50px';
+        document.getElementById('modal1-text').style.paddingBottom = '60px';
+        document.getElementById('close-modal1').style.marginLeft = '40px';
+        document.getElementById('modal1-inner').style.backgroundColor = 'lightgreen';
+    });
+
+    closeModal1.addEventListener('click',() =>{
+       document.getElementById('modal1') .style.display = 'none';
+
+    });
+
+    /*End of the Modal 2*/
+
+
+    /*Start of the Modal 3*/
+
+    const openModal2 = document.getElementById('open-modal2');
+    const closeModal2 = document.getElementById('close-modal2');
+
+    openModal2.addEventListener('click',()=> {
+        document.getElementById('modal2').style.display = 'block';
+        document.getElementById('Modal2-text').innerHTML = "Product development helps in aligning the company's business strategies with its products, as it involves methods and practices that help reduce risks and uncertainties associated with products being envisioned. " +
+            "The Digital Group’s Software Product Development team believes in providing high-quality product development services. " +
+            "We follow a highly collaborative approach to develop software products.";
+        document.getElementById('Modal2-text').style.paddingLeft = '40px';
+        document.getElementById('Modal2-text').style.paddingTop = '50px';
+        document.getElementById('Modal2-text').style.paddingBottom = '60px';
+        document.getElementById('close-modal2').style.marginLeft = '40px';
+        document.getElementById('modal-inner').style.backgroundColor = 'lightblue';
+        document.getElementById('Heading').style.color = 'black';
+    });
+
+    closeModal2.addEventListener('click',() =>{
+        document.getElementById('modal2') .style.display = 'none'
+    });
+
+    /*End of the Modal 3*/
+
+    /*Change the image when user click on Explore button in header section */
+    const imgChanging = document.getElementById('ChangeImg');
+    imgChanging.addEventListener('click',()=>{
+        document.getElementById('imgHERO').style.backgroundImage = "url('leone-venter-VieM9BdZKFo-unsplash.jpg')";
+    });
+
+    /*End of the Code*/
+
+
+    /*Start of the Modal 4*/
+    const openModal3 = document.getElementById('open-modal3');
+    const closeModal3 = document.getElementById('close-modal3');
+
+    openModal3.addEventListener('click',()=> {
+        document.getElementById('modal3').style.display = 'block';
+        document.getElementById('Modal3-text').innerHTML = "Web development is the coding or programming that enables website functionality, per the owner's requirements. It mainly deals with the non-design aspect of building websites, which includes coding and writing markup.";
+        document.getElementById('Modal3-text').style.paddingLeft = '40px';
+        document.getElementById('Modal3-text').style.paddingTop = '50px';
+        document.getElementById('Modal3-text').style.paddingBottom = '60px';
+        document.getElementById('close-modal3').style.marginLeft = '40px';
+        document.getElementById('modal3-inner').style.backgroundColor = 'lightgreen';
+    });
+
+    closeModal3.addEventListener('click',() =>{
+        document.getElementById('modal3') .style.display = 'none';
+
+    });
+
+    /*End of the Modal 4*/
+
+    /*Start of the Modal 5*/
+    const openModal4 = document.getElementById('open-modal4');
+    const closeModal4 = document.getElementById('close-modal4');
+
+    openModal4.addEventListener('click',()=> {
+        document.getElementById('modal4').style.display = 'block';
+        document.getElementById('Modal4-text').innerHTML = "Hosting specially optimized for WordPress powered websites. The server architecture, databases have been developed to enhance the performance of your website.";
+        document.getElementById('Modal4-text').style.paddingLeft = '40px';
+        document.getElementById('Modal4-text').style.paddingTop = '50px';
+        document.getElementById('Modal4-text').style.paddingBottom = '60px';
+        document.getElementById('close-modal4').style.marginLeft = '40px';
+        document.getElementById('modal4-inner').style.backgroundColor = '';
+    });
+
+    closeModal4.addEventListener('click',() =>{
+        document.getElementById('modal4') .style.display = 'none';
+
+    });
+
+    /*End of the Modal 5*/
+
+    /*Start of the Modal 6*/
+    const openModal5 = document.getElementById('open-modal5');
+    const closeModal5 = document.getElementById('close-modal5');
+
+    openModal5.addEventListener('click',()=> {
+        document.getElementById('modal5').style.display = 'block';
+        document.getElementById('Modal5-text').innerHTML = "Search engine optimization is the process of optimizing web pages and their content to be easily discoverable by users searching for terms relevant to your website. The term SEO also describes the process of making web pages easier for search engine indexing software, to find, scan, and index your site.";
+        document.getElementById('Modal5-text').style.paddingLeft = '40px';
+        document.getElementById('Modal5-text').style.paddingTop = '50px';
+        document.getElementById('Modal5-text').style.paddingBottom = '60px';
+        document.getElementById('close-modal5').style.marginLeft = '40px';
+        document.getElementById('modal5-inner').style.backgroundColor = '';
+    });
+
+    closeModal5.addEventListener('click',() =>{
+        document.getElementById('modal5') .style.display = 'none';
+
+    });
+    /*End of the Modal 6*/
+
+</script>
+
+<!--End of the DOM-->
+
+<!--Contact Page-->
+<section id="ContactPage" class="get-in-touch">
+    <h1 class="title">Get in touch</h1>
+    <form class="contact-form row">
+        <div class="form-field col x-100">
+            <input id="name" class="input-text js-input" type="text" placeholder="&ast; Name" required>
+            <label class="label" for="name"></label>
+        </div>
+        <div class="form-field col x-100">
+            <input id="message" class="input-text js-input" type="text" placeholder="Message">
+            <label class="label" for="message"></label>
+        </div>
+        <div class="form-field col x-100">
+            <input id="EMAIL" class="input-text js-input" placeholder="&ast; Email" type="text" required>
+            <label class="label" for="message"></label>
+        </div>
+        <div class="form-field col x-100 align-center">
+            <input class="submit-btn" type="submit" value="Submit">
+        </div>
+    </form>
+</section>
+<!--End of the Contact Page-->
+
+
+<!--Footer -->
+<section>
+    <div id="footer">
+        <div id="utility-links">
+
+            <!--For Need Help-->
+            <div class="help">
+                <ul>
+                    <h3 class="left">Need Help?</h3>
+                    <li><a href="#">Check Order Status</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <!--End of the need help -->
+
+            <!-- For the vertical Line-->
+            <div class="rectangle"></div>
+
+            <!--Information About company-->
+            <div class="about">
+                <ul>
+                    <h3 class="left">About Company</h3>
+                    <li><a href="#">Company Information</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="rectangle"></div>
+
+            <div class="card">
+                <ul>
+                    <h3 class="left">Card Services</h3>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+            <div id="social">
+                <a href="#!" target="_blank">
+                    <img width="34" height="34" src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/facebook_khedl5.svg"></a></img>
+
+                <a href="#!" target="_blank">
+                    <img width="34" height="34" src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/twitter_fu5ejk.svg"></a></img>
+
+                <a href="#!" target="_blank">
+                    <img width="34" height="34" src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/pinterest_kahh1i.svg"></a></img>
+
+                <a href="#!" target="_blank">
+                    <img width="34" height="34" src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/youtube_xrntt3.svg"></a></img>
+
+                <a href="#!" target="_blank">
+                    <img width="34" height="34" src="https://res.cloudinary.com/cloudinary-account/image/upload/v1469457641/instagram_ugek0w.svg"></a></img>
+
+            </div>
+        </div>
+
+        <div class="rectangle-horiz"></div>
+
+        <div id="copyright">
+            <ul>
+                <li class="copy"  >&#169 2020 Mobiteck All Rights Reserved.</li>
+
+                </ul>
+
+        </div>
+
+    </div>
+
+    </footer>
+</section>
+<!--End of the footer-->
+
+</body>
